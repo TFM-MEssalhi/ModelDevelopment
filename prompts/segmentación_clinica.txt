@@ -1,0 +1,97 @@
+Quiero que actúes como un experto en análisis de conversaciones médicas. Tienes que segmentar la transcripción clínica que sigue en fases temáticas, indicando para cada una:
+1. Tipo de fase clínica (elige una de estas):
+   - Exposición de síntomas
+   - Exploración / preguntas diagnósticas
+   - Diagnóstico
+   - Tratamiento
+   - Despedida / cierre
+   - Conversación informal / cortesía
+2. El intervalo de tiempo aproximado (`hh:mm:ss --> hh:mm:ss`) o el rango de líneas si no hay timestamp.
+3. Un resumen breve del contenido de esa fase. En caso de que haya varias fases seguidas del mismo tipo, únelas.
+4. Un diagrama de tipo *timeline textual*, que refleje la estructura de la conversación de forma visual.
+---
+Formato de salida esperado:
+📌 **Resumen de fases**
+1. 🟢 Fase: Conversación informal / cortesía  
+   ⏱️ Tiempo: 00:00:00 --> 00:00:06  
+   📝 Resumen: Intercambio de saludos y cortesías entre el paciente y los médicos.
+2. 🟠 Fase: Exposición de síntomas  
+   ⏱️ Tiempo: 00:00:07 --> 00:00:20  
+   📝 Resumen: El paciente describe lunares que han aparecido repentinamente.
+3. 🔵 Fase: Diagnóstico  
+   ⏱️ Tiempo: 00:00:21 --> 00:00:32  
+   📝 Resumen: El médico valora que puede tratarse de algo común y propone evaluación conjunta.
+[...]
+---
+📊 **Timeline visual (segmentos proporcionales aprox.)**
+00:00 ───────────────🟢─────────────  
+00:06 ───────────────🟠────────────────────────  
+00:20 ───────────────🔵───────────────  
+00:32 ───────────────🔴──────────  
+00:45 ───────────────⚪────────────  
+Leyenda:  
+🟢 Cortesía | 🟠 Síntomas | 🔵 Diagnóstico | 🔴 Tratamiento | ⚪ Cierre
+
+Quiero que lo redactes en formato JSON, aqui tienes un ejemplo de salida:
+
+{
+  "resumen_fases": [
+    {
+      "fase": "Conversación informal / cortesía",
+      "icono": "🟢",
+      "tiempo": "00:00:00 → 00:00:12",
+      "resumen": "Saludos iniciales entre los participantes."
+    },
+    {
+      "fase": "Exposición de síntomas",
+      "icono": "🟠",
+      "tiempo": "00:00:12 → 00:00:22",
+      "resumen": "El paciente describe la aparición repentina de lunares, algunos de aspecto extraño, y consulta si es normal."
+    },
+    {
+      "fase": "Exploración / preguntas diagnósticas",
+      "icono": "🔵",
+      "tiempo": "00:00:22 → 00:01:24",
+      "resumen": "El médico examina visualmente los lunares en la espalda del paciente, realiza preguntas específicas sobre dolor, crecimiento rápido y características visibles de los lunares."
+    },
+    {
+      "fase": "Diagnóstico",
+      "icono": "🔵",
+      "tiempo": "00:01:24 → 00:02:26",
+      "resumen": "El médico general considera que el lunar parece común pero pide opinión al especialista. El especialista Sánchez advierte que es importante observar cualquier cambio en los lunares como oscurecimiento o aumento de tamaño."
+    },
+    {
+      "fase": "Tratamiento",
+      "icono": "🔴",
+      "tiempo": "00:02:26 → 00:03:42",
+      "resumen": "El especialista indica que el lunar probablemente es benigno (nevus melanocítico), pero recomienda seguimiento continuo debido al crecimiento repentino reportado. El paciente confirma no tener antecedentes familiares de cáncer de piel."
+    },
+    {
+      "fase": "Despedida / cierre",
+      "icono": "⚪",
+      "tiempo": "00:03:42 → 00:04:08",
+      "resumen": "Los médicos recomiendan vigilar continuamente los lunares y regresar en caso de cambios adicionales. La conversación concluye cordialmente."
+    }
+  ],
+  "timeline_visual": {
+    "leyenda": {
+      "🟢": "Cortesía",
+      "🟠": "Síntomas",
+      "🔵": "Exploración y diagnóstico",
+      "🔴": "Tratamiento",
+      "⚪": "Cierre"
+    },
+    "estructura": [
+      { "inicio": "00:00", "fase": "🟢", "comentario": "Cortesía" },
+      { "inicio": "00:12", "fase": "🟠", "comentario": "Síntomas" },
+      { "inicio": "00:22", "fase": "🔵", "comentario": "Exploración y preguntas" },
+      { "inicio": "01:24", "fase": "🔵", "comentario": "Diagnóstico preliminar" },
+      { "inicio": "02:26", "fase": "🔴", "comentario": "Tratamiento / Recomendaciones" },
+      { "inicio": "03:42", "fase": "⚪", "comentario": "Cierre" }
+    ]
+  }
+}
+
+
+---
+Aquí está la transcripción:
