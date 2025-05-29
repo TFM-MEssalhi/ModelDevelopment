@@ -1,3 +1,4 @@
 .env
 Cases/
 Results/
+__pycache__/

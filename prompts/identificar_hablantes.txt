@@ -1,0 +1,14 @@
+A continuación, se presenta la transcripción de una consulta médica en la que participan diferentes personas. 
+Tu tarea consiste en determinar el rol de cada hablante ("speaker") como uno de los siguientes: "medico", "especialista" o "paciente".
+
+Ten en cuenta las siguientes reglas:
+
+- Siempre habrá al menos un médico.
+- Puede haber, además, un paciente y un especialista, pero como máximo habrá un hablante por rol.
+- Si solo se identifica a un profesional de la salud, su rol será "medico".
+- Si hay más de un profesional de la salud, uno será "medico" y el otro deberá ser clasificado como "especialista".
+
+Devuelve únicamente un JSON con la siguiente estructura, donde cada clave es un identificador de hablante ("speaker") y su valor es su rol correspondiente:
+{"SPEAKER_00": "medico", "SPEAKER_01": "paciente", ...}
+
+Aquí tienes la transcripción con las intervenciones de cada hablante, incluyendo los tiempos correspondientes:
