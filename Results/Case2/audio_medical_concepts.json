@@ -1,0 +1,28 @@
+{
+  "medico": {
+    "PROC": [
+      "escuchar",
+      "examen"
+    ],
+    "ANAT": [
+      "pulmones",
+      "pulmones"
+    ],
+    "PHYS": [
+      "Respire"
+    ],
+    "LIVB": [
+      "bacteria",
+      "bacteria"
+    ],
+    "DISO": [
+      "tos"
+    ]
+  },
+  "paciente": {
+    "DISO": [
+      "tos",
+      "sangre"
+    ]
+  }
+}

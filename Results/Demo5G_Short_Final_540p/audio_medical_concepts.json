@@ -1,0 +1,83 @@
+{
+  "especialista": {
+    "PROC": [
+      "Posa sincronizada",
+      "descarga?",
+      "tensión",
+      "electro",
+      "tensión",
+      "tensión",
+      "electro",
+      "protocolo",
+      "hemodinámica",
+      "tensiones",
+      "reevaluando",
+      "estimulación",
+      "estimulación",
+      "estimulando",
+      "traslado"
+    ],
+    "CHEM": [
+      "antagonista",
+      "catecolamina?",
+      "adrenalina"
+    ],
+    "PHYS": [
+      "despierte"
+    ],
+    "DEVI": [
+      "marcapasos",
+      "bomba?",
+      "marcapasos"
+    ]
+  },
+  "medico": {
+    "PROC": [
+      "controlar el pulso",
+      "las constantes",
+      "electro",
+      "ritmo cardíaco",
+      "descarga",
+      "revertimos",
+      "antiagregar",
+      "electro",
+      "estimulación",
+      "sedarlo",
+      "perfusión",
+      "perfusión",
+      "perfusión",
+      "sedado",
+      "sedarlo",
+      "perfusión"
+    ],
+    "DISO": [
+      "síndrome coronario",
+      "arritmias malignas",
+      "infarto",
+      "arritmia maligna",
+      "arritmia maligna",
+      "bloqueo AV",
+      "hipotenso"
+    ],
+    "ANAT": [
+      "nodo sinusal"
+    ],
+    "DEVI": [
+      "parches",
+      "palas",
+      "marcapasos",
+      "marcapasos"
+    ],
+    "CHEM": [
+      "Anesate",
+      "Midazolam",
+      "Ticagrelor",
+      "Adiro",
+      "fentanilo",
+      "amperios",
+      "fentanilo",
+      "Propofol",
+      "Laudrina"
+    ]
+  }
+}

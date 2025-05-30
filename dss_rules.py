@@ -77,8 +77,7 @@ with ruleset('infeccion_respiratoria'):
 with ruleset('nevus_melanocitico'):
 
     # Regla para lesión pigmentada pequeña (menor a 6 mm) con borde regular y color uniforme (benigno)
-    @when_all((m.predicado == 'tiene') & (m.objeto == 'lesion_pigmentada') & (m.tamano < 6) &
-              (m.borde == 'regular') & (m.color == 'uniforme'))
+    @when_all((m.predicado == 'tiene') & ((m.objeto == 'lesion_pigmentada')| (m.objeto == 'lunar') | (m.objeto == 'nevus')))
     def regla_nevus_benigno(c):
         c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'nevus_benigno'})
 
@@ -89,7 +88,7 @@ with ruleset('nevus_melanocitico'):
         c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'posible_melanoma'})
 
     # Regla para lesión que ha cambiado de tamaño o forma en los últimos 6 meses
-    @when_all((m.predicado == 'tiene') & (m.objeto == 'cambio_reciente') & (m.periodo_meses <= 6))
+    @when_all((m.predicado == 'tiene') & ((m.objeto == 'cambio_reciente') | (m.objeto == 'cambio_tamano') | (m.objeto.matches('crecimiento.*'))))
     def regla_cambio_reciente(c):
         c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'lesion_sospechosa'})
 
@@ -104,11 +103,75 @@ with ruleset('nevus_melanocitico'):
         c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'diagnosticado_con', 'objeto': 'lesion_sospechosa_melanoma'})
 
     # Salida del diagnóstico
-    @when_all(+m.sujeto)
+    @when_all((m.predicado == 'diagnosticado_con'))
     def salida(c):
-        print(f'El paciente {c.m.sujeto} ha sido diagnosticado con {c.m.objeto}')
+        salida = f'\n✅ Diagnóstico final: El paciente {c.m.sujeto} ha sido diagnosticado con {c.m.objeto}'
+        print(salida)
+        resultados.append(c.m.objeto)
 
-def diagnosticar_en_todos_rulesets(sujetos_sintomas, ruleset_names):
+
+with ruleset('quemadura_solar'):
+    
+    # Regla básica para quemadura solar con enrojecimiento
+    @when_all((m.predicado == 'tiene') & (m.objeto.matches('quemadura.*')) & (m.color == 'rojo'))
+    def regla_quemadura_solar(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'quemadura_solar_grado1'})
+
+    # Regla para quemadura con dolor/ardor
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'quemadura_piel') & 
+              ((m.sintomas == 'ardor') | (m.sintomas == 'dolor_leve')))
+    def regla_quemadura_dolorosa(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'quemadura_solar_sintomatica'})
+
+    # Regla para exposición sin protección
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'exposicion_solar') & (m.proteccion == False))
+    def regla_exposicion_riesgo(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'riesgo_quemadura'})
+
+    # Regla para síntomas asociados (dolor cabeza)
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'dolor_cabeza') & 
+              (m.predicado == 'tiene') & (m.objeto == 'quemadura_piel'))
+    def regla_sintomas_asociados(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'reaccion_solar'})
+
+    # Regla para tiempo de curación (5-7 días)
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'quemadura_solar_grado1') & 
+              (m.duracion <= 7))
+    def regla_pronostico(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'pronostico', 'objeto': 'curacion_7dias'})
+
+    # Reglas de severidad
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'ampollas'))
+    def regla_quemadura_grado2(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'quemadura_solar_grado2'})
+
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'zonas_oscuras'))
+    def regla_quemadura_severa(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'tiene', 'objeto': 'quemadura_solar_complicada'})
+
+    # Diagnósticos finales
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'quemadura_solar_grado1'))
+    def diagnostico_grado1(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'diagnosticado_con', 'objeto': 'quemadura_solar_leve'})
+
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'quemadura_solar_grado2'))
+    def diagnostico_grado2(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'diagnosticado_con', 'objeto': 'quemadura_solar_moderada'})
+
+    @when_all((m.predicado == 'tiene') & (m.objeto == 'quemadura_solar_complicada'))
+    def diagnostico_complicada(c):
+        c.assert_fact({'sujeto': c.m.sujeto, 'predicado': 'diagnosticado_con', 'objeto': 'quemadura_solar_severa'})
+
+    # Recomendaciones finales
+    @when_all((m.predicado == 'diagnosticado_con') & (m.objeto.matches('quemadura_solar.*')))
+    def salida(c):
+        salida = f'\n✅ Diagnóstico final: El paciente {c.m.sujeto} ha sido diagnosticado con {c.m.objeto}'
+        print(salida)
+        resultados.append(c.m.objeto)
+        
+
+def diagnosis(sujetos_sintomas):
+    ruleset_names = ['infeccion_respiratoria', 'nevus_melanocitico', 'quemadura_solar']
     resultados.clear()
     for ruleset_name in ruleset_names:
         for sujeto, sintomas in sujetos_sintomas.items():

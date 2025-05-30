@@ -84,7 +84,7 @@ def handle_response_clinic_segmentation(json_response):
         
 
 def prompt_sympthoms(df):
-    with open("prompts/extraer_sintomas_dss2.txt", "r") as archivo:
+    with open("prompts/extraer_sintomas_dss.txt", "r") as archivo:
         extract_sympthoms = archivo.read()
     prompt = extract_sympthoms + "\n\n"
     for _, row in df.iterrows():

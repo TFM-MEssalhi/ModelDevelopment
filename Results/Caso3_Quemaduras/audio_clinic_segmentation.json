@@ -1,0 +1,81 @@
+{
+    "resumen_fases": [
+        {
+            "fase": "Conversación informal / cortesía",
+            "icono": "🟢",
+            "tiempo": "00:00:00 → 00:00:06",
+            "resumen": "Intercambio de saludos y cortesías entre el paciente y los médicos."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:00:07 → 00:00:20",
+            "resumen": "El paciente describe su situación y preocupación."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:00:22 → 00:01:24",
+            "resumen": "El médico examina y realiza preguntas."
+        },
+        {
+            "fase": "Diagnóstico",
+            "icono": "🔴",
+            "tiempo": "00:01:24 → 00:02:26",
+            "resumen": "El médico diagnostica quemadura solar de primer grado."
+        },
+        {
+            "fase": "Tratamiento",
+            "icono": "⚪",
+            "tiempo": "00:02:26 → 00:03:42",
+            "resumen": "El especialista indica tratamiento y recomendaciones."
+        },
+        {
+            "fase": "Despedida / cierre",
+            "icono": "🔵",
+            "tiempo": "00:03:42 → 00:04:08",
+            "resumen": "Cierre y recomendaciones finales."
+        }
+    ],
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Exploración y diagnóstico",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:00",
+                "fase": "🟢",
+                "comentario": "Cortesía"
+            },
+            {
+                "inicio": "00:06",
+                "fase": "🟠",
+                "comentario": "Síntomas"
+            },
+            {
+                "inicio": "00:20",
+                "fase": "🔵",
+                "comentario": "Exploración"
+            },
+            {
+                "inicio": "01:24",
+                "fase": "🔴",
+                "comentario": "Diagnóstico"
+            },
+            {
+                "inicio": "02:26",
+                "fase": "⚪",
+                "comentario": "Tratamiento"
+            },
+            {
+                "inicio": "03:42",
+                "fase": "🔵",
+                "comentario": "Cierre"
+            }
+        ]
+    }
+}

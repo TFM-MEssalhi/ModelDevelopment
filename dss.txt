@@ -1,0 +1,61 @@
+(tfm) moha02@DESKTOP-OS7BLUA:~/tfm/ModelDevelopment$ python dss.py 
+Procesando Results/Caso1_InfeccionRespiratoria/...
+```json
+{
+  "Paciente": [
+    {"predicado": "tiene", "objeto": "dolor_garganta", "duracion": 7, "localizacion": "garganta"},
+    {"predicado": "tiene", "objeto": "tos", "duracion": 7},
+    {"predicado": "tiene", "objeto": "sequedad_garganta", "duracion": 7},
+    {"predicado": "tiene", "objeto": "dificultad_respirar", "duracion": 7},
+    {"predicado": "tiene", "objeto": "exposicion_frio", "duracion": ""},
+    {"predicado": "tiene", "objeto": "exposicion_polvo", "duracion": ""}
+  ]
+}
+```
+{'Paciente': [{'predicado': 'tiene', 'objeto': 'dolor_garganta', 'duracion': 7, 'localizacion': 'garganta'}, {'predicado': 'tiene', 'objeto': 'tos', 'duracion': 7}, {'predicado': 'tiene', 'objeto': 'sequedad_garganta', 'duracion': 7}, {'predicado': 'tiene', 'objeto': 'dificultad_respirar', 'duracion': 7}, {'predicado': 'tiene', 'objeto': 'exposicion_frio', 'duracion': ''}, {'predicado': 'tiene', 'objeto': 'exposicion_polvo', 'duracion': ''}]}
+
+✅ Diagnóstico final: El paciente Paciente ha sido diagnosticado con resfriado_comun
+['resfriado_comun']
+Procesando Results/Caso2_Lunares/...
+```json
+{
+  "Paciente": [
+    {"predicado": "tiene", "objeto": "lunar", "localizacion": "parte_superior_de_la_espalda"},
+    {"predicado": "tiene", "objeto": "cambio_en_lunar", "duracion": "", "localizacion": "parte_superior_de_la_espalda"}
+  ]
+}
+```
+{'Paciente': [{'predicado': 'tiene', 'objeto': 'lunar', 'localizacion': 'parte_superior_de_la_espalda'}, {'predicado': 'tiene', 'objeto': 'cambio_en_lunar', 'duracion': '', 'localizacion': 'parte_superior_de_la_espalda'}]}
+
+✅ Diagnóstico final: El paciente Paciente ha sido diagnosticado con nevus_melanocitico_benigno
+['nevus_melanocitico_benigno']
+Procesando Results/Caso3_Quemaduras/...
+```json
+{
+  "Paciente": [
+    {
+      "predicado": "tiene",
+      "objeto": "quemadura_solar",
+      "duracion": "",
+      "localizacion": "piel",
+      "color": "rojo"
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "dolor_cabeza",
+      "duracion": "",
+      "localizacion": ""
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "ardor_piel",
+      "duracion": "",
+      "localizacion": "piel"
+    }
+  ]
+}
+```
+{'Paciente': [{'predicado': 'tiene', 'objeto': 'quemadura_solar', 'duracion': '', 'localizacion': 'piel', 'color': 'rojo'}, {'predicado': 'tiene', 'objeto': 'dolor_cabeza', 'duracion': '', 'localizacion': ''}, {'predicado': 'tiene', 'objeto': 'ardor_piel', 'duracion': '', 'localizacion': 'piel'}]}
+
+✅ Diagnóstico final: El paciente Paciente ha sido diagnosticado con quemadura_solar_leve
+['quemadura_solar_leve']

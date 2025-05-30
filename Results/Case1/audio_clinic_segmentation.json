@@ -1,0 +1,70 @@
+{
+    "resumen_fase": [
+        {
+            "fase": "Conversación informal / cortesía",
+            "icono": "🟢",
+            "tiempo": "00:00:00 → 00:00:12",
+            "resumen": "Saludos iniciales entre los participantes."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:00:13 → 00:00:20",
+            "resumen": "La paciente describe dolor y ardor al orinar."
+        },
+        {
+            "fase": "Diagnóstico",
+            "icono": "🔵",
+            "tiempo": "00:00:21 → 00:00:28",
+            "resumen": "El médico sugiere una infección urinaria basado en los síntomas descritos."
+        },
+        {
+            "fase": "Tratamiento",
+            "icono": "🔴",
+            "tiempo": "00:00:29 → 00:00:42",
+            "resumen": "El médico prescribe antibióticos y da recomendaciones para evitar complicaciones."
+        },
+        {
+            "fase": "Despedida / cierre",
+            "icono": "⚪",
+            "tiempo": "00:00:43 → 00:00:54",
+            "resumen": "El médico concluye la consulta con instrucciones finales y saludos."
+        }
+    ],
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Diagnóstico",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:00",
+                "fase": "🟢",
+                "comentario": "Saludos iniciales"
+            },
+            {
+                "inicio": "00:13",
+                "fase": "🟠",
+                "comentario": "Descripción de síntomas"
+            },
+            {
+                "inicio": "00:21",
+                "fase": "🔵",
+                "comentario": "Diagnóstico de infección urinaria"
+            },
+            {
+                "inicio": "00:29",
+                "fase": "🔴",
+                "comentario": "Prescripción de antibióticos"
+            },
+            {
+                "inicio": "00:43",
+                "fase": "⚪",
+                "comentario": "Conclusión y saludos"
+            }
+        ]
+    }
+}

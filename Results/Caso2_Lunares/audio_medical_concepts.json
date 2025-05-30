@@ -1,0 +1,85 @@
+{
+  "especialista": {
+    "PROC": [
+      "observación",
+      "seguimiento",
+      "seguimiento",
+      "observando"
+    ],
+    "LIVB": [
+      "paciente"
+    ],
+    "ANAT": [
+      "lunares",
+      "lunar",
+      "lunar",
+      "lunar",
+      "lunares"
+    ],
+    "DISO": [
+      "enrojecimiento",
+      "picado",
+      "sangrado",
+      "irregulares?",
+      "signos",
+      "nevus melanocítico",
+      "cáncer de piel",
+      "melanoma?",
+      "nevus melanocíticos"
+    ]
+  },
+  "medico": {
+    "PHYS": [
+      "sol"
+    ],
+    "ANAT": [
+      "lunar",
+      "lunar",
+      "lunar",
+      "lunares",
+      "lunar",
+      "lunar?",
+      "lunar",
+      "lunares",
+      "lunar",
+      "lunares?",
+      "lunar",
+      "lunar",
+      "lunar"
+    ],
+    "PROC": [
+      "evaluamos",
+      "diagnóstico",
+      "vigilando",
+      "revisión",
+      "observando"
+    ],
+    "LIVB": [
+      "especialista",
+      "personas",
+      "especialista"
+    ],
+    "DISO": [
+      "lunar",
+      "duele?",
+      "duele",
+      "bordes irregulares"
+    ]
+  },
+  "paciente": {
+    "LIVB": [
+      "doctor"
+    ],
+    "DISO": [
+      "lunares",
+      "lunares",
+      "lunares"
+    ],
+    "ANAT": [
+      "espalda",
+      "espalda",
+      "lunares",
+      "lunares"
+    ]
+  }
+}

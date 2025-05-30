@@ -1,0 +1,103 @@
+{
+    "resumen_fases": [
+        {
+            "fase": "Conversación informal / cortesía",
+            "icono": "🟢",
+            "tiempo": "00:00:07 → 00:00:10",
+            "resumen": "Intercambio de saludos entre el paciente y la médica."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:00:11 → 00:00:17",
+            "resumen": "El paciente menciona que ha traído agendas con anotaciones de sus síntomas."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:00:17 → 00:00:21",
+            "resumen": "La médica pide que se enfoquen en el principal problema del paciente."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:00:21 → 00:00:33",
+            "resumen": "El paciente describe una tos persistente desde el 3 de diciembre, con episodios más graves y presencia de sangre."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:00:34 → 00:00:41",
+            "resumen": "La médica pregunta si el paciente ya estaba tomando algún medicamento, y el paciente menciona un ungüento que no ha sido efectivo."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:00:46 → 00:00:52",
+            "resumen": "La médica anuncia que escuchará los pulmones del paciente y le pide que respire profundo."
+        },
+        {
+            "fase": "Diagnóstico",
+            "icono": "🔵",
+            "tiempo": "00:00:58 → 00:01:09",
+            "resumen": "La médica sospecha de una bacteria en los pulmones y ordena un examen para confirmar."
+        },
+        {
+            "fase": "Despedida / cierre",
+            "icono": "⚪",
+            "tiempo": "00:01:09 → 00:01:11",
+            "resumen": "El paciente agradece y la conversación concluye."
+        }
+    ],
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Exploración y preguntas",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:07",
+                "fase": "🟢",
+                "comentario": "Cortesía"
+            },
+            {
+                "inicio": "00:11",
+                "fase": "🟠",
+                "comentario": "Síntomas iniciales"
+            },
+            {
+                "inicio": "00:17",
+                "fase": "🔵",
+                "comentario": "Enfoque en el problema principal"
+            },
+            {
+                "inicio": "00:21",
+                "fase": "🟠",
+                "comentario": "Descripción detallada de síntomas"
+            },
+            {
+                "inicio": "00:34",
+                "fase": "🔵",
+                "comentario": "Preguntas sobre tratamiento previo"
+            },
+            {
+                "inicio": "00:46",
+                "fase": "🔵",
+                "comentario": "Exploración física"
+            },
+            {
+                "inicio": "00:58",
+                "fase": "🔵",
+                "comentario": "Diagnóstico preliminar"
+            },
+            {
+                "inicio": "01:09",
+                "fase": "⚪",
+                "comentario": "Cierre"
+            }
+        ]
+    }
+}

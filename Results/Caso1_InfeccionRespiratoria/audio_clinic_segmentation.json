@@ -1,0 +1,81 @@
+{
+    "resumen_fases": [
+        {
+            "fase": "Conversación informal / cortesía",
+            "icono": "🟢",
+            "tiempo": "00:00:00 → 00:01:47",
+            "resumen": "Intercambio de saludos y presentación."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:01:47 → 00:05:14",
+            "resumen": "El paciente describe dolor en la garganta, tos seca y dificultad para tragar."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:05:14 → 00:10:54",
+            "resumen": "El médico realiza preguntas sobre los síntomas, su duración y posibles factores desencadenantes."
+        },
+        {
+            "fase": "Diagnóstico",
+            "icono": "🔵",
+            "tiempo": "00:10:54 → 00:17:42",
+            "resumen": "El médico y el especialista Sánchez discuten la posibilidad de bronquitis viral."
+        },
+        {
+            "fase": "Tratamiento",
+            "icono": "🔴",
+            "tiempo": "00:17:42 → 00:26:42",
+            "resumen": "Se prescribe tratamiento sintomático para aliviar los síntomas, incluyendo antitusígenos, analgésicos y un descongestivo."
+        },
+        {
+            "fase": "Despedida / cierre",
+            "icono": "⚪",
+            "tiempo": "00:26:42 → 00:30:01",
+            "resumen": "El médico y el especialista Sánchez se despiden del paciente y recomiendan seguimiento si hay cambios en los síntomas."
+        }
+    ],
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Exploración y diagnóstico",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:00",
+                "fase": "🟢",
+                "comentario": "Cortesía"
+            },
+            {
+                "inicio": "00:01:47",
+                "fase": "🟠",
+                "comentario": "Síntomas"
+            },
+            {
+                "inicio": "00:05:14",
+                "fase": "🔵",
+                "comentario": "Exploración y preguntas"
+            },
+            {
+                "inicio": "00:10:54",
+                "fase": "🔵",
+                "comentario": "Diagnóstico"
+            },
+            {
+                "inicio": "00:17:42",
+                "fase": "🔴",
+                "comentario": "Tratamiento"
+            },
+            {
+                "inicio": "00:26:42",
+                "fase": "⚪",
+                "comentario": "Cierre"
+            }
+        ]
+    }
+}

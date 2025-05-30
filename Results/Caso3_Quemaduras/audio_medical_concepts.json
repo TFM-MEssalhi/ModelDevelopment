@@ -1,0 +1,92 @@
+{
+  "especialista": {
+    "PROC": [
+      "protección solar",
+      "cuide"
+    ],
+    "DISO": [
+      "quemadura solar",
+      "complicaciones",
+      "infecciones",
+      "descamación",
+      "quemaduras solares",
+      "irritarle",
+      "pelando",
+      "ampollas"
+    ],
+    "ANAT": [
+      "piel",
+      "piel",
+      "piel"
+    ],
+    "CHEM": [
+      "agua fría",
+      "crema",
+      "aloe vera",
+      "pantenol",
+      "alcohol",
+      "perfumes"
+    ],
+    "PHYS": [
+      "regenere"
+    ]
+  },
+  "medico": {
+    "DISO": [
+      "duele?",
+      "escuece?",
+      "rojo",
+      "duela",
+      "radiación",
+      "daño",
+      "fiebre",
+      "dolor de cabeza",
+      "quemaduras",
+      "problemas cutáneos",
+      "signos de infección"
+    ],
+    "PROC": [
+      "evaluarle",
+      "evaluar",
+      "protección",
+      "sombrero",
+      "usar el protector solar",
+      "crema calmante"
+    ],
+    "LIVB": [
+      "especialista",
+      "especialista"
+    ],
+    "PHYS": [
+      "ultravioleta",
+      "curarse?",
+      "curar",
+      "sol"
+    ],
+    "CHEM": [
+      "crema",
+      "aloe vera"
+    ],
+    "ANAT": [
+      "piel",
+      "cara"
+    ],
+    "DEVI": [
+      "protector solar"
+    ]
+  },
+  "paciente": {
+    "LIVB": [
+      "doctor"
+    ],
+    "DISO": [
+      "quemaduras en la piel",
+      "dolor de cabeza",
+      "ardor en la piel"
+    ],
+    "PROC": [
+      "senderismo?",
+      "lavarme la zona"
+    ]
+  }
+}

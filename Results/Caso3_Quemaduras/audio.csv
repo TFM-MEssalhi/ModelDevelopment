@@ -1,0 +1,52 @@
+start,end,speaker,transcription
+0.3,0.84,SPEAKER_02,¿Me sale?
+3.56,4.91,SPEAKER_02,"Buenos días, ¿qué tal?"
+5.14,5.9,SPEAKER_00,"Gracias, doctor."
+6.81,7.42,SPEAKER_02,Siéntese.
+9.95,11.86,SPEAKER_02,¿Qué tal? Cuéntanos qué te ocurre.
+12.35,18.19,SPEAKER_00,Pues mi doctora hace un par días fui a hacer una ruta generista y tuve un par de quemaduras en la piel como puedo apreciar.
+18.78,22.32,SPEAKER_00,y quiero saber si pueden ser peligrosas o tampoco igual
+22.9,25.56,SPEAKER_02,"Vale, ¿te duele? ¿te escuece?"
+25.56,25.83,SPEAKER_00,poquito
+25.83,25.97,SPEAKER_02,that.
+25.97,26.76,SPEAKER_00,y a todo
+26.76,26.81,SPEAKER_02,Thank you.
+26.93,28.6,SPEAKER_02,vale pues vamos a evaluarte vale
+31.59,34.17,SPEAKER_02,"Sí, por aquí es verdad que está un poco más rojo."
+34.51,38.84,SPEAKER_02,"and it doesn't hurt you, as you have mentioned. It's the most worrying symptoms."
+37.56,37.61,SPEAKER_00,Thank you very much.
+39.13,40.14,SPEAKER_00,"No, especialmente."
+41.31,44.24,SPEAKER_02,"Vale, pues te voy a pasar con el especialista Sánchez."
+44.63,47.31,SPEAKER_02,"de dermatología y él te va a evaluar, ¿vale?"
+48.51,52.02,SPEAKER_01,"Señores Sali, ¿usaste algún tipo de protección solar durante este..."
+52.02,53.37,SPEAKER_00,esta actividad de senderismo.
+54.0,57.98,SPEAKER_00,"No especialmente, estaba nublado y entonces no pensé que fuese necesario."
+58.47,66.94,SPEAKER_02,"Eso es bastante común. Aunque esté nublado, la reacción ultravioleta puede causar daño. ¿Tuviste fiebre o dolor de cabeza después de la exposición?"
+67.09,72.48,SPEAKER_00,"Sí, un poco de dolor de cabeza sobre todo y también un poco, como ya he dicho, de ardor en la piel."
+73.44,73.57,SPEAKER_01,that
+73.57,73.64,SPEAKER_00,Over $2.
+73.64,73.79,SPEAKER_01,So then
+73.79,73.98,SPEAKER_00,you guys.
+73.98,85.22,SPEAKER_01,"que ha sufrido una quemadura solar de primer grado. Suelen ser superficiales, pero pueden ser muy molestas. Lo importante es que ahora cuide bien la piel para evitar complicaciones como infecciones o una descamación excesiva."
+86.33,90.82,SPEAKER_02,"¿Has aplicado algo desde entonces? ¿Alguna crema, aloe vera o algo similar?"
+91.24,92.98,SPEAKER_00,"No, simplemente lavarme la cabeza."
+92.98,93.87,SPEAKER_01,con agua fría.
+94.75,99.96,SPEAKER_01,"Vale, está bien empezar así, pero es recomendable que usted use una crema específica para quemaduras solares."
+100.13,102.23,SPEAKER_01,que contenga aloe vera o panthenol.
+103.05,107.34,SPEAKER_01,Es muy importante que evite productos con alcohol o perfumes que puedan irritarle aún más la piel.
+108.79,111.71,SPEAKER_02,Además de lo que comenta el señor Sánchez...
+111.96,115.93,SPEAKER_02,Es importante que mantengan la piel hidratada y eviten la exposición al sol.
+116.27,117.43,SPEAKER_02,durante los próximos días.
+117.77,122.71,SPEAKER_02,"Y si sale, usa protección, usa sombrero y protector solar, incluso aunque no..."
+122.8,123.91,SPEAKER_02,hallazol visible
+126.22,130.17,SPEAKER_02,¿Cuánto tiempo suele tardar en curarse?
+131.13,133.95,SPEAKER_02,Pues más o menos en unos 7 días.
+134.15,138.91,SPEAKER_02,se suele curar. De todas formas te lo va a detallar más el especialista Sánchez.
+140.03,149.91,SPEAKER_01,"Lo normal es que en unos 5, entre 5 o 7 días notes una mejorada bastante clara. La piel se irá pelando pero no debes arrancarla. Es muy importante que deje que se regenere sola."
+150.32,152.9,SPEAKER_01,Si usted ve que aparecen ampollas o zonas muy oscuras...
+153.0,154.62,SPEAKER_01,consulte con nosotros de inmediato.
+155.75,161.07,SPEAKER_02,Y recuerda que las quemaduras repetidas aumentan el riesgo de problemas cutáneos a lo largo del plazo.
+161.71,165.79,SPEAKER_02,y es muy importante usar el protector solar con frecuencia.
+166.27,168.22,SPEAKER_02,sobre todo en zonas como la cara.
+168.73,170.42,SPEAKER_02,que es donde más estáis puestos.
+172.58,180.71,SPEAKER_02,"Evitar sol directo y aplicar crema calmante. Y si empeora o hay signos de infección, vuelves a la consulta, ¿de acuerdo? Perfecto, doctor."

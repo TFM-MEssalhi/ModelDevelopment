@@ -1,0 +1,18 @@
+{
+    "Paciente": [
+        {
+            "predicado": "tiene",
+            "objeto": "lunar",
+            "localizacion": "parte_superior_de_la_espalda"
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "cambio_en_lunar",
+            "duracion": ""
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "crecimiento_repentino"
+        }
+    ]
+}

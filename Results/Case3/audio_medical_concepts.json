@@ -1,0 +1,82 @@
+{
+  "especialista": {
+    "LIVB": [
+      "ginecólogo",
+      "doctor",
+      "doctor",
+      "doctor"
+    ],
+    "DISO": [
+      "accidente",
+      "pain",
+      "accidente",
+      "traumatismos cervicales",
+      "accidentes principalmente vehiculares",
+      "lesiones",
+      "lesiones",
+      "dolor",
+      "duela"
+    ],
+    "PROC": [
+      "evaluación",
+      "revisemos",
+      "radiografía",
+      "pruebas",
+      "rehabilitación",
+      "Mire",
+      "Mire",
+      "revisarlo",
+      "pruebas",
+      "evaluar",
+      "derivarla",
+      "tratamiento"
+    ],
+    "ANAT": [
+      "eje",
+      "columna",
+      "cabeza",
+      "cabeza"
+    ],
+    "PHYS": [
+      "movilidad",
+      "mover la"
+    ],
+    "DEVI": [
+      "pañuelo"
+    ]
+  },
+  "paciente": {
+    "LIVB": [
+      "doctor",
+      "doctor Mato",
+      "médico de la familia",
+      "persona",
+      "delincuente",
+      "gente",
+      "persona",
+      "doctor"
+    ],
+    "DEVI": [
+      "topón"
+    ],
+    "DISO": [
+      "dolor en el cuello",
+      "golpe",
+      "doler",
+      "dolor",
+      "dolió",
+      "doliendo",
+      "traumatismo",
+      "accidente",
+      "dolor"
+    ],
+    "PROC": [
+      "interrogatorio",
+      "radiografía",
+      "radiografías"
+    ],
+    "PHYS": [
+      "recupero"
+    ]
+  }
+}

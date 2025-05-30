@@ -1,0 +1,81 @@
+{
+    "resumen_fases": [
+        {
+            "fase": "Conversación informal / cortesía",
+            "icono": "🟢",
+            "tiempo": "03:68 - 00:10",
+            "resumen": "Intercambio de saludos y cortesías entre los médicos."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:10 - 00:40",
+            "resumen": "No hay una exposición clara de síntomas, posiblemente debido a que la transcripción comience con procedimientos."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:40 - 01:50",
+            "resumen": "Los médicos realizan un electrocardiograma (ECG) y exploran al paciente, comentando sobre el ritmo cardíaco y la tensión."
+        },
+        {
+            "fase": "Diagnóstico",
+            "icono": "🔵",
+            "tiempo": "01:50 - 03:00",
+            "resumen": "Identifican un síndrome coronario con elevación en la cara inferior del ECG y descenso del ST en la cara anterior, indicando un infarto ínfero-posterior."
+        },
+        {
+            "fase": "Tratamiento",
+            "icono": "🔴",
+            "tiempo": "03:00 - 05:10",
+            "resumen": "Los médicos deciden usar un marcapasos externo, administrar fármacos como fentanilo y Adiro, y preparan para el traslado a hemodinámica."
+        },
+        {
+            "fase": "Despedida / cierre",
+            "icono": "⚪",
+            "tiempo": "05:10 - 05:20",
+            "resumen": "Finalizan los procedimientos, coordinan el traslado del paciente y concluyen la atención."
+        }
+    ],
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Exploración y diagnóstico",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:00",
+                "fase": "🟢",
+                "comentario": "Cortesía inicial"
+            },
+            {
+                "inicio": "00:10",
+                "fase": "🟠",
+                "comentario": "No expuesto claramente"
+            },
+            {
+                "inicio": "00:40",
+                "fase": "🔵",
+                "comentario": "Exploración"
+            },
+            {
+                "inicio": "01:50",
+                "fase": "🔵",
+                "comentario": "Diagnóstico"
+            },
+            {
+                "inicio": "03:00",
+                "fase": "🔴",
+                "comentario": "Tratamiento"
+            },
+            {
+                "inicio": "05:10",
+                "fase": "⚪",
+                "comentario": "Cierre y traslado"
+            }
+        ]
+    }
+}

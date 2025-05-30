@@ -1,0 +1,29 @@
+{
+  "medico": {
+    "LIVB": [
+      "Paciente",
+      "Señorita",
+      "mujeres"
+    ],
+    "DISO": [
+      "infección urinaria",
+      "Dolor",
+      "ardor",
+      "infecciones urinarias",
+      "complicaciones"
+    ],
+    "CHEM": [
+      "antibióticos"
+    ]
+  },
+  "paciente": {
+    "DISO": [
+      "dolor",
+      "parte inferior",
+      "arde"
+    ],
+    "PROC": [
+      "exámenes"
+    ]
+  }
+}

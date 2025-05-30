@@ -3,7 +3,8 @@ import os
 import csv
 from MedNER import MedNER
 from AudioProcessor import AudioProcessor
-from prompts import prompt_clean_transcription, handle_response_clean_text, prompt_assign_roles, handle_response_assign_roles, prompt_clinic_segmentation, handle_response_clinic_segmentation, prompt_sympthoms
+from prompts import prompt_clean_transcription, handle_response_clean_text, prompt_assign_roles, handle_response_assign_roles, prompt_clinic_segmentation, handle_response_clinic_segmentation, prompt_sympthoms, prompt_sympthoms, handle_response_sympthoms
+from dss_rules import diagnosis
 from llm_model import LLMmodel
 import pandas as pd
 import json 
@@ -50,13 +51,27 @@ def medical_ner(df, output_path, medner):
 def extract_sympthoms(df, output_path, llm_model):
     prompt = prompt_sympthoms(df)
     respuesta_modelo = llm_model.ask_model(prompt)
-    print(respuesta_modelo)
+    sympthoms_json = handle_response_sympthoms(respuesta_modelo)
+    if sympthoms_json is not None:
+        with open(output_path + "_sympthoms.json", "w", encoding="utf-8") as f:
+            json.dump(sympthoms_json, f, ensure_ascii=False, indent=4)
+        return clinic_segmentation
+    else:
+        raise ValueError("Error while extracting symptoms.")
+
+def diagnosis_with_dss(sympthoms_json, output_path):
+    result = diagnosis(sympthoms_json)
+    print(result)
+    with open(output_path + "_diagnosis.json", "w", encoding="utf-8") as f:
+        for res in result:
+            f.write(f"{res}\n")
+    return result
 def main(case, llm_model, audio_processor, medner):
     case_input_path = CASES_FOLDER + case
-    case_output_path = RESULTS_FOLDER + case
-    if not os.path.exists(case_output_path):
-        os.makedirs(case_output_path)
-    case_output_path = RESULTS_FOLDER + case + "/audio"
+    case_output_folder = RESULTS_FOLDER + case
+    if not os.path.exists(case_output_folder):
+        os.makedirs(case_output_folder)
+    case_output_path = case_output_folder + "/audio"
     """
     print("Extracting audio from video")
     df = audio_processor.extract_audio_segmentated_pyannote(audio_file=case_input_path + ".wav")
@@ -70,12 +85,12 @@ def main(case, llm_model, audio_processor, medner):
     df_cleaned_with_speakers = pd.read_csv(case_output_path + "_cleaned_text_and_roles.csv", encoding='utf-8')
     print("Performing clinic segmentation")
     clinic_segmentation(df_cleaned_with_speakers, case_output_path, llm_model)
-    #print("Performing medical NER")
-    #medical_ner(df_cleaned_with_speakers, case_output_path, medner)
-    #df_cleaned_with_speakers = pd.read_csv(case_output_path + "_cleaned_text_and_roles.csv", encoding='utf-8')
-    #extract_sympthoms(df_cleaned_with_speakers, case_output_path, llm_model)
-
-
+    print("Performing medical NER")
+    medical_ner(df_cleaned_with_speakers, case_output_path, medner)
+    print("Extracting symptoms")
+    sympthmos = extract_sympthoms(df_cleaned_with_speakers, case_output_path, llm_model)
+    print("Diagnosing with DSS")
+    diagnosis = diagnosis_with_dss(sympthmos, case_output_path)
 if __name__ == "__main__":
     #medner = MedNER()
     llm_model = LLMmodel()

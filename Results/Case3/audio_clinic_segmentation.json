@@ -1,0 +1,81 @@
+{
+    "resumen_fase": [
+        {
+            "fase": "Conversación informal / cortesía",
+            "icono": "🟢",
+            "tiempo": "00:00:00 → 00:00:12",
+            "resumen": "Intercambio de saludos iniciales entre el paciente y el especialista."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:00:12 → 00:00:22",
+            "resumen": "El paciente describe un accidente con dolor cervical y menciona su percepción de la gravedad."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:00:22 → 00:01:24",
+            "resumen": "El especialista indaga sobre el accidente y evalúa los síntomas del paciente."
+        },
+        {
+            "fase": "Diagnóstico",
+            "icono": "🔵",
+            "tiempo": "00:01:24 → 00:02:26",
+            "resumen": "El especialista concluye que no hay lesiones graves y evalúa la movilidad cervical."
+        },
+        {
+            "fase": "Tratamiento",
+            "icono": "🔴",
+            "tiempo": "00:02:26 → 00:03:42",
+            "resumen": "Se propone un programa de rehabilitación con ejercicios y posible reducción de sesiones según evolución."
+        },
+        {
+            "fase": "Despedida / cierre",
+            "icono": "⚪",
+            "tiempo": "00:03:42 → 00:04:08",
+            "resumen": "Confirmación de entendimiento del tratamiento y despedida cordial."
+        }
+    ],
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Exploración y diagnóstico",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:00",
+                "fase": "🟢",
+                "comentario": "Saludos iniciales"
+            },
+            {
+                "inicio": "00:12",
+                "fase": "🟠",
+                "comentario": "Descripción del accidente"
+            },
+            {
+                "inicio": "00:22",
+                "fase": "🔵",
+                "comentario": "Evaluación inicial"
+            },
+            {
+                "inicio": "01:24",
+                "fase": "🔵",
+                "comentario": "Diagnóstico preliminar"
+            },
+            {
+                "inicio": "02:26",
+                "fase": "🔴",
+                "comentario": "Plan de tratamiento"
+            },
+            {
+                "inicio": "03:42",
+                "fase": "⚪",
+                "comentario": "Cierre de la consulta"
+            }
+        ]
+    }
+}

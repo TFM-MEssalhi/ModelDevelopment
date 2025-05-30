@@ -1,0 +1,81 @@
+{
+    "resumen_fases": [
+        {
+            "fase": "Conversación informal / cortesía",
+            "icono": "🟢",
+            "tiempo": "00:00:00 → 00:00:12",
+            "resumen": "Intercambio de saludos y cortesías entre el paciente y los médicos."
+        },
+        {
+            "fase": "Exposición de síntomas",
+            "icono": "🟠",
+            "tiempo": "00:00:12 → 00:00:37",
+            "resumen": "El paciente describe la aparición repentina de lunares, algunos de aspecto extraño, y consulta si es normal."
+        },
+        {
+            "fase": "Exploración / preguntas diagnósticas",
+            "icono": "🔵",
+            "tiempo": "00:00:37 → 00:02:10",
+            "resumen": "El médico examina visualmente los lunares en la espalda del paciente, realiza preguntas específicas sobre dolor, crecimiento rápido y características visibles de los lunares."
+        },
+        {
+            "fase": "Diagnóstico",
+            "icono": "🔵",
+            "tiempo": "00:02:10 → 00:03:42",
+            "resumen": "El médico general considera que el lunar parece común pero pide opinión al especialista. El especialista Sánchez advierte que es importante observar cualquier cambio en los lunares como oscurecimiento o aumento de tamaño."
+        },
+        {
+            "fase": "Tratamiento",
+            "icono": "🔴",
+            "tiempo": "00:03:42 → 00:04:55",
+            "resumen": "El especialista indica que el lunar probablemente es benigno (nevus melanocítico), pero recomienda seguimiento continuo debido al crecimiento repentino reportado. El paciente confirma no tener antecedentes familiares de cáncer de piel."
+        },
+        {
+            "fase": "Despedida / cierre",
+            "icono": "⚪",
+            "tiempo": "00:04:55 → 00:05:00",
+            "resumen": "Los médicos recomiendan vigilar continuamente los lunares y regresar en caso de cambios adicionales. La conversación concluye cordialmente."
+        }
+    ],
+    "timeline_visual": {
+        "leyenda": {
+            "🟢": "Cortesía",
+            "🟠": "Síntomas",
+            "🔵": "Exploración y diagnóstico",
+            "🔴": "Tratamiento",
+            "⚪": "Cierre"
+        },
+        "estructura": [
+            {
+                "inicio": "00:00",
+                "fase": "🟢",
+                "comentario": "Cortesía"
+            },
+            {
+                "inicio": "00:00:12",
+                "fase": "🟠",
+                "comentario": "Síntomas"
+            },
+            {
+                "inicio": "00:00:37",
+                "fase": "🔵",
+                "comentario": "Exploración y preguntas"
+            },
+            {
+                "inicio": "00:02:10",
+                "fase": "🔵",
+                "comentario": "Diagnóstico preliminar"
+            },
+            {
+                "inicio": "00:03:42",
+                "fase": "🔴",
+                "comentario": "Tratamiento / Recomendaciones"
+            },
+            {
+                "inicio": "00:04:55",
+                "fase": "⚪",
+                "comentario": "Cierre"
+            }
+        ]
+    }
+}

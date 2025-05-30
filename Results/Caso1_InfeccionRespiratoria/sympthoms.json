@@ -1,0 +1,34 @@
+{
+    "Paciente": [
+        {
+            "predicado": "tiene",
+            "objeto": "dolor_garganta",
+            "duracion": 7
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "sequedad_garganta",
+            "duracion": 7
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "tos",
+            "duracion": 7
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "dificultad_respirar",
+            "duracion": 7
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "exposicion_frio",
+            "exposicion": "trabajo en el campo"
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "exposicion_polvo",
+            "exposicion": "trabajo en el campo"
+        }
+    ]
+}

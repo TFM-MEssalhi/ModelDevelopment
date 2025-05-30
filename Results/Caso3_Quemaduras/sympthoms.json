@@ -1,0 +1,19 @@
+{
+    "Paciente": [
+        {
+            "predicado": "tiene",
+            "objeto": "quemadura_solar",
+            "localizacion": "piel",
+            "color": "rojo"
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "dolor_cabeza"
+        },
+        {
+            "predicado": "tiene",
+            "objeto": "ardor_piel",
+            "localizacion": "piel"
+        }
+    ]
+}

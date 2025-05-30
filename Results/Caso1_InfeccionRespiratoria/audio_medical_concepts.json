@@ -1,0 +1,108 @@
+{
+  "especialista": {
+    "DISO": [
+      "síntomas",
+      "bronquitis",
+      "síntoma",
+      "fiebre",
+      "dificultad para respirar",
+      "síntomas",
+      "síntomas",
+      "bronquitis",
+      "infecciones virales",
+      "bronquitis viral",
+      "fiebre",
+      "dificultad para respirar",
+      "síntomas",
+      "síntoma"
+    ],
+    "LIVB": [
+      "señorita",
+      "señora",
+      "doctor"
+    ],
+    "PROC": [
+      "tratamiento",
+      "tratar"
+    ],
+    "CHEM": [
+      "antibióticos"
+    ],
+    "ANAT": [
+      "cuerpo"
+    ],
+    "PHYS": [
+      "recupere",
+      "recuperación"
+    ]
+  },
+  "medico": {
+    "DISO": [
+      "síntoma",
+      "síntomas?",
+      "infección respiratoria",
+      "síntomas",
+      "infección",
+      "tos",
+      "dolor de pecho",
+      "molestia",
+      "tos",
+      "mucosidad"
+    ],
+    "LIVB": [
+      "especialista",
+      "Doctor",
+      "Doctor",
+      "farmacéutico?",
+      "especialista",
+      "Doctor",
+      "virus"
+    ],
+    "CHEM": [
+      "medicación",
+      "medicamento",
+      "antitusígenos",
+      "analgésicos",
+      "descongestivo"
+    ],
+    "PROC": [
+      "médico",
+      "tratamiento",
+      "tratamiento"
+    ],
+    "PHYS": [
+      "dormir",
+      "descansar",
+      "dormir",
+      "respirar"
+    ],
+    "ANAT": [
+      "pecho",
+      "garganta"
+    ],
+    "DEVI": [
+      "almohada"
+    ]
+  },
+  "paciente": {
+    "DISO": [
+      "dolor en la garganta",
+      "tos",
+      "sequedad en la garganta",
+      "síntomas",
+      "enfermedad",
+      "dolor"
+    ],
+    "PHYS": [
+      "tragar",
+      "respirar"
+    ],
+    "PROC": [
+      "venir",
+      "médico"
+    ],
+    "CHEM": [
+      "medicamento"
+    ]
+  }
+}
