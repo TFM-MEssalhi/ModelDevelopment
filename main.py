@@ -1,13 +1,16 @@
 
 import os
 import csv
+import pandas as pd
+import json 
+
 from MedNER import MedNER
 from AudioProcessor import AudioProcessor
 from prompts import prompt_clean_transcription, handle_response_clean_text, prompt_assign_roles, handle_response_assign_roles, prompt_clinic_segmentation, handle_response_clinic_segmentation, prompt_sympthoms, prompt_sympthoms, handle_response_sympthoms
 from dss_rules import diagnosis
 from llm_model import LLMmodel
-import pandas as pd
-import json 
+from build_json import build_final_json
+
 CASES_FOLDER = os.getenv("CASES_FOLDER")
 RESULTS_FOLDER = os.getenv("RESULTS_FOLDER")
 WHISPER_MODEL_SIZE = os.getenv("WHISPER_MODEL_SIZE")
@@ -53,19 +56,23 @@ def extract_sympthoms(df, output_path, llm_model):
     respuesta_modelo = llm_model.ask_model(prompt)
     sympthoms_json = handle_response_sympthoms(respuesta_modelo)
     if sympthoms_json is not None:
-        with open(output_path + "_sympthoms.json", "w", encoding="utf-8") as f:
+        with open(output_path + "_symptoms.json", "w", encoding="utf-8") as f:
             json.dump(sympthoms_json, f, ensure_ascii=False, indent=4)
         return clinic_segmentation
     else:
         raise ValueError("Error while extracting symptoms.")
 
-def diagnosis_with_dss(sympthoms_json, output_path):
-    result = diagnosis(sympthoms_json)
-    print(result)
-    with open(output_path + "_diagnosis.json", "w", encoding="utf-8") as f:
-        for res in result:
-            f.write(f"{res}\n")
-    return result
+def diagnosis_with_dss(symptoms_json, output_path):
+    result = diagnosis(symptoms_json)
+    structured_output = {
+            "diagnosis": result[0],
+            "recommendation": result[1]
+        }
+    output_file = f"{output_path}_diagnosis.json"
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(structured_output, f, ensure_ascii=False, indent=2)
+    return structured_output
+
 def main(case, llm_model, audio_processor, medner):
     case_input_path = CASES_FOLDER + case
     case_output_folder = RESULTS_FOLDER + case
@@ -81,16 +88,21 @@ def main(case, llm_model, audio_processor, medner):
     print("Obtaining roles")
     df_cleaned = pd.read_csv(case_output_path + "_cleaned_text.csv", encoding='utf-8')
     df_cleaned_with_speakers = identify_speakers(df_cleaned, case_output_path, llm_model)
-    """
     df_cleaned_with_speakers = pd.read_csv(case_output_path + "_cleaned_text_and_roles.csv", encoding='utf-8')
     print("Performing clinic segmentation")
     clinic_segmentation(df_cleaned_with_speakers, case_output_path, llm_model)
     print("Performing medical NER")
     medical_ner(df_cleaned_with_speakers, case_output_path, medner)
     print("Extracting symptoms")
-    sympthmos = extract_sympthoms(df_cleaned_with_speakers, case_output_path, llm_model)
+    symptoms = extract_sympthoms(df_cleaned_with_speakers, case_output_path, llm_model)
+    """
+    with open(case_output_path + "_symptoms.json", "r", encoding="utf-8") as f:
+        symptoms = json.load(f)
     print("Diagnosing with DSS")
-    diagnosis = diagnosis_with_dss(sympthmos, case_output_path)
+    diagnosis = diagnosis_with_dss(symptoms, case_output_path)
+    
+    build_final_json(case_output_path)
+    
 if __name__ == "__main__":
     #medner = MedNER()
     llm_model = LLMmodel()

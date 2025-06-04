@@ -1,0 +1,394 @@
+{
+  "session_id": "37aa287a-1b16-4d48-9c92-8e75cdabf749",
+  "timestamp": "2025-06-04T11:38:20.157114",
+  "speakers": [
+    "especialista",
+    "medico",
+    "paciente"
+  ],
+  "clinical_segments": {
+    "courtesy": {
+      "time_range": "00:00:00 → 00:00:06",
+      "description": "Intercambio de saludos y cortesías entre el paciente y los médicos."
+    },
+    "symptoms": {
+      "time_range": "00:00:07 → 00:00:20",
+      "description": "El paciente describe su situación y preocupación."
+    },
+    "diagnosis": {
+      "time_range": "00:03:42 → 00:04:08",
+      "description": "Cierre y recomendaciones finales."
+    },
+    "treatment": {
+      "time_range": "00:01:24 → 00:02:26",
+      "description": "El médico diagnostica quemadura solar de primer grado."
+    },
+    "closure": {
+      "time_range": "00:02:26 → 00:03:42",
+      "description": "El especialista indica tratamiento y recomendaciones."
+    }
+  },
+  "medical_concepts": {
+    "especialista": {
+      "PROC": [
+        "protección solar",
+        "cuide"
+      ],
+      "DISO": [
+        "quemadura solar",
+        "complicaciones",
+        "infecciones",
+        "descamación",
+        "quemaduras solares",
+        "irritarle",
+        "pelando",
+        "ampollas"
+      ],
+      "ANAT": [
+        "piel",
+        "piel",
+        "piel"
+      ],
+      "CHEM": [
+        "agua fría",
+        "crema",
+        "aloe vera",
+        "pantenol",
+        "alcohol",
+        "perfumes"
+      ],
+      "PHYS": [
+        "regenere"
+      ]
+    },
+    "medico": {
+      "DISO": [
+        "duele?",
+        "escuece?",
+        "rojo",
+        "duela",
+        "radiación",
+        "daño",
+        "fiebre",
+        "dolor de cabeza",
+        "quemaduras",
+        "problemas cutáneos",
+        "signos de infección"
+      ],
+      "PROC": [
+        "evaluarle",
+        "evaluar",
+        "protección",
+        "sombrero",
+        "usar el protector solar",
+        "crema calmante"
+      ],
+      "LIVB": [
+        "especialista",
+        "especialista"
+      ],
+      "PHYS": [
+        "ultravioleta",
+        "curarse?",
+        "curar",
+        "sol"
+      ],
+      "CHEM": [
+        "crema",
+        "aloe vera"
+      ],
+      "ANAT": [
+        "piel",
+        "cara"
+      ],
+      "DEVI": [
+        "protector solar"
+      ]
+    },
+    "patient": {
+      "LIVB": [
+        "doctor"
+      ],
+      "DISO": [
+        "quemaduras en la piel",
+        "dolor de cabeza",
+        "ardor en la piel"
+      ],
+      "PROC": [
+        "senderismo?",
+        "lavarme la zona"
+      ]
+    }
+  },
+  "extracted_symptoms": [
+    {
+      "predicado": "tiene",
+      "objeto": "quemadura_solar",
+      "localizacion": "piel",
+      "color": "rojo"
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "dolor_cabeza"
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "ardor_piel",
+      "localizacion": "piel"
+    }
+  ],
+  "diagnosis": {
+    "diagnosis": "quemadura_solar_leve",
+    "recommendation": "Aplicar crema hidratante, evitar nueva exposición solar y mantenerse bien hidratado."
+  },
+  "transcription": {
+    "segments": [
+      {
+        "start": 0.3,
+        "end": 0.84,
+        "speaker": "medico",
+        "transcription": "¿Me sale?"
+      },
+      {
+        "start": 3.56,
+        "end": 4.91,
+        "speaker": "medico",
+        "transcription": "Buenos días, ¿qué tal?"
+      },
+      {
+        "start": 5.14,
+        "end": 5.9,
+        "speaker": "paciente",
+        "transcription": "Gracias, doctor."
+      },
+      {
+        "start": 6.81,
+        "end": 7.42,
+        "speaker": "medico",
+        "transcription": "Siéntese."
+      },
+      {
+        "start": 9.95,
+        "end": 11.86,
+        "speaker": "medico",
+        "transcription": "¿Qué tal? Cuéntenos qué le ocurre."
+      },
+      {
+        "start": 12.35,
+        "end": 18.19,
+        "speaker": "paciente",
+        "transcription": "Pues, doctora, hace unos días fui a hacer una ruta senderista y tuve un par de quemaduras en la piel, como puede apreciar."
+      },
+      {
+        "start": 18.78,
+        "end": 22.32,
+        "speaker": "paciente",
+        "transcription": "Y quiero saber si pueden ser peligrosas o no."
+      },
+      {
+        "start": 22.9,
+        "end": 25.56,
+        "speaker": "medico",
+        "transcription": "Vale, ¿le duele? ¿Le escuece?"
+      },
+      {
+        "start": 25.56,
+        "end": 25.83,
+        "speaker": "paciente",
+        "transcription": "Poquito."
+      },
+      {
+        "start": 26.93,
+        "end": 28.6,
+        "speaker": "medico",
+        "transcription": "Vale, vamos a evaluarle."
+      },
+      {
+        "start": 31.59,
+        "end": 34.17,
+        "speaker": "medico",
+        "transcription": "Sí, por aquí es verdad que está un poco más rojo."
+      },
+      {
+        "start": 34.51,
+        "end": 38.84,
+        "speaker": "medico",
+        "transcription": "Y que no le duela, como ha mencionado, no es lo más preocupante."
+      },
+      {
+        "start": 39.13,
+        "end": 40.14,
+        "speaker": "paciente",
+        "transcription": "No, especialmente."
+      },
+      {
+        "start": 41.31,
+        "end": 44.24,
+        "speaker": "medico",
+        "transcription": "Vale, te voy a pasar con el especialista Sánchez."
+      },
+      {
+        "start": 44.63,
+        "end": 47.31,
+        "speaker": "medico",
+        "transcription": "de dermatología y él le va a evaluar, ¿vale?"
+      },
+      {
+        "start": 48.51,
+        "end": 52.02,
+        "speaker": "especialista",
+        "transcription": "Señor, ¿usó algún tipo de protección solar durante este..."
+      },
+      {
+        "start": 52.02,
+        "end": 53.37,
+        "speaker": "paciente",
+        "transcription": "...esta actividad de senderismo?"
+      },
+      {
+        "start": 54.0,
+        "end": 57.98,
+        "speaker": "paciente",
+        "transcription": "No especialmente, estaba nublado y entonces no pensé que fuese necesario."
+      },
+      {
+        "start": 58.47,
+        "end": 66.94,
+        "speaker": "medico",
+        "transcription": "Eso es bastante común. Aunque esté nublado, la radiación ultravioleta puede causar daño. ¿Tuvo fiebre o dolor de cabeza después de la exposición?"
+      },
+      {
+        "start": 67.09,
+        "end": 72.48,
+        "speaker": "paciente",
+        "transcription": "Sí, un poco de dolor de cabeza sobre todo y también un poco de ardor en la piel, como ya he dicho."
+      },
+      {
+        "start": 73.98,
+        "end": 85.22,
+        "speaker": "especialista",
+        "transcription": "que ha sufrido una quemadura solar de primer grado. Suelen ser superficiales, pero pueden ser muy molestas. Lo importante es que ahora cuide bien la piel para evitar complicaciones como infecciones o una descamación excesiva."
+      },
+      {
+        "start": 86.33,
+        "end": 90.82,
+        "speaker": "medico",
+        "transcription": "¿Ha aplicado algo desde entonces? ¿Alguna crema, aloe vera o algo similar?"
+      },
+      {
+        "start": 91.24,
+        "end": 92.98,
+        "speaker": "paciente",
+        "transcription": "No, simplemente lavarme la zona."
+      },
+      {
+        "start": 92.98,
+        "end": 93.87,
+        "speaker": "especialista",
+        "transcription": "con agua fría."
+      },
+      {
+        "start": 94.75,
+        "end": 99.96,
+        "speaker": "especialista",
+        "transcription": "Vale, está bien empezar así, pero es recomendable que use una crema específica para quemaduras solares."
+      },
+      {
+        "start": 100.13,
+        "end": 102.23,
+        "speaker": "especialista",
+        "transcription": "que contenga aloe vera o pantenol."
+      },
+      {
+        "start": 103.05,
+        "end": 107.34,
+        "speaker": "especialista",
+        "transcription": "Es muy importante que evite productos con alcohol o perfumes que puedan irritarle aún más la piel."
+      },
+      {
+        "start": 108.79,
+        "end": 111.71,
+        "speaker": "medico",
+        "transcription": "Además de lo que comenta el señor Sánchez..."
+      },
+      {
+        "start": 111.96,
+        "end": 115.93,
+        "speaker": "medico",
+        "transcription": "Es importante que mantenga la piel hidratada y evite la exposición al sol."
+      },
+      {
+        "start": 116.27,
+        "end": 117.43,
+        "speaker": "medico",
+        "transcription": "durante los próximos días."
+      },
+      {
+        "start": 117.77,
+        "end": 123.91,
+        "speaker": "medico",
+        "transcription": "Y si sale, use protección, use sombrero y protector solar, incluso aunque no haya sol visible."
+      },
+      {
+        "start": 126.22,
+        "end": 130.17,
+        "speaker": "medico",
+        "transcription": "¿Cuánto tiempo suele tardar en curarse?"
+      },
+      {
+        "start": 131.13,
+        "end": 133.95,
+        "speaker": "medico",
+        "transcription": "Más o menos en unos 7 días."
+      },
+      {
+        "start": 134.15,
+        "end": 138.91,
+        "speaker": "medico",
+        "transcription": "se suele curar. De todas formas, se lo va a detallar más el especialista Sánchez."
+      },
+      {
+        "start": 140.03,
+        "end": 149.91,
+        "speaker": "especialista",
+        "transcription": "Lo normal es que en unos 5 o 7 días note una mejoría bastante clara. La piel se irá pelando, pero no debe arrancarla. Es muy importante que deje que se regenere sola."
+      },
+      {
+        "start": 150.32,
+        "end": 154.62,
+        "speaker": "especialista",
+        "transcription": "Si usted ve que aparecen ampollas o zonas muy oscuras, consulte con nosotros de inmediato."
+      },
+      {
+        "start": 155.75,
+        "end": 161.07,
+        "speaker": "medico",
+        "transcription": "Y recuerde que las quemaduras repetidas aumentan el riesgo de problemas cutáneos a largo plazo."
+      },
+      {
+        "start": 161.71,
+        "end": 165.79,
+        "speaker": "medico",
+        "transcription": "Y es muy importante usar el protector solar con frecuencia."
+      },
+      {
+        "start": 166.27,
+        "end": 168.22,
+        "speaker": "medico",
+        "transcription": "sobre todo en zonas como la cara,"
+      },
+      {
+        "start": 168.73,
+        "end": 170.42,
+        "speaker": "medico",
+        "transcription": "que es donde más estamos expuestos."
+      },
+      {
+        "start": 172.58,
+        "end": 180.71,
+        "speaker": "medico",
+        "transcription": "Evite el sol directo y aplique crema calmante. Y si empeora o hay signos de infección, vuelve a la consulta, ¿de acuerdo? Perfecto, doctor."
+      }
+    ]
+  }
+}

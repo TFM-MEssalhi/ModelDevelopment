@@ -1,0 +1,629 @@
+{
+  "session_id": "173fa745-aaeb-4404-9d69-6686c515b01b",
+  "timestamp": "2025-06-04T11:38:20.154484",
+  "speakers": [
+    "especialista",
+    "medico",
+    "paciente"
+  ],
+  "clinical_segments": {
+    "courtesy": {
+      "time_range": "00:00:00 → 00:01:47",
+      "description": "Intercambio de saludos y presentación."
+    },
+    "symptoms": {
+      "time_range": "00:01:47 → 00:05:14",
+      "description": "El paciente describe dolor en la garganta, tos seca y dificultad para tragar."
+    },
+    "diagnosis": {
+      "time_range": "00:10:54 → 00:17:42",
+      "description": "El médico y el especialista Sánchez discuten la posibilidad de bronquitis viral."
+    },
+    "treatment": {
+      "time_range": "00:17:42 → 00:26:42",
+      "description": "Se prescribe tratamiento sintomático para aliviar los síntomas, incluyendo antitusígenos, analgésicos y un descongestivo."
+    },
+    "closure": {
+      "time_range": "00:26:42 → 00:30:01",
+      "description": "El médico y el especialista Sánchez se despiden del paciente y recomiendan seguimiento si hay cambios en los síntomas."
+    }
+  },
+  "medical_concepts": {
+    "especialista": {
+      "DISO": [
+        "síntomas",
+        "bronquitis",
+        "síntoma",
+        "fiebre",
+        "dificultad para respirar",
+        "síntomas",
+        "síntomas",
+        "bronquitis",
+        "infecciones virales",
+        "bronquitis viral",
+        "fiebre",
+        "dificultad para respirar",
+        "síntomas",
+        "síntoma"
+      ],
+      "LIVB": [
+        "señorita",
+        "señora",
+        "doctor"
+      ],
+      "PROC": [
+        "tratamiento",
+        "tratar"
+      ],
+      "CHEM": [
+        "antibióticos"
+      ],
+      "ANAT": [
+        "cuerpo"
+      ],
+      "PHYS": [
+        "recupere",
+        "recuperación"
+      ]
+    },
+    "medico": {
+      "DISO": [
+        "síntoma",
+        "síntomas?",
+        "infección respiratoria",
+        "síntomas",
+        "infección",
+        "tos",
+        "dolor de pecho",
+        "molestia",
+        "tos",
+        "mucosidad"
+      ],
+      "LIVB": [
+        "especialista",
+        "Doctor",
+        "Doctor",
+        "farmacéutico?",
+        "especialista",
+        "Doctor",
+        "virus"
+      ],
+      "CHEM": [
+        "medicación",
+        "medicamento",
+        "antitusígenos",
+        "analgésicos",
+        "descongestivo"
+      ],
+      "PROC": [
+        "médico",
+        "tratamiento",
+        "tratamiento"
+      ],
+      "PHYS": [
+        "dormir",
+        "descansar",
+        "dormir",
+        "respirar"
+      ],
+      "ANAT": [
+        "pecho",
+        "garganta"
+      ],
+      "DEVI": [
+        "almohada"
+      ]
+    },
+    "patient": {
+      "DISO": [
+        "dolor en la garganta",
+        "tos",
+        "sequedad en la garganta",
+        "síntomas",
+        "enfermedad",
+        "dolor"
+      ],
+      "PHYS": [
+        "tragar",
+        "respirar"
+      ],
+      "PROC": [
+        "venir",
+        "médico"
+      ],
+      "CHEM": [
+        "medicamento"
+      ]
+    }
+  },
+  "extracted_symptoms": [
+    {
+      "predicado": "tiene",
+      "objeto": "dolor_garganta",
+      "duracion": 7
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "sequedad_garganta",
+      "duracion": 7
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "tos",
+      "duracion": 7
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "dificultad_respirar",
+      "duracion": 7
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "exposicion_frio",
+      "exposicion": "trabajo en el campo"
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "exposicion_polvo",
+      "exposicion": "trabajo en el campo"
+    }
+  ],
+  "diagnosis": {
+    "diagnosis": "resfriado_comun",
+    "recommendation": "Se recomienda reposo, hidratación abundante y medicamentos para aliviar los síntomas."
+  },
+  "transcription": {
+    "segments": [
+      {
+        "start": 0.2,
+        "end": 0.72,
+        "speaker": "medico",
+        "transcription": "Hey Sally!"
+      },
+      {
+        "start": 1.21,
+        "end": 1.47,
+        "speaker": "paciente",
+        "transcription": "Gracias."
+      },
+      {
+        "start": 3.44,
+        "end": 4.2,
+        "speaker": "paciente",
+        "transcription": "Vamos a ir a su asunto."
+      },
+      {
+        "start": 4.37,
+        "end": 5.75,
+        "speaker": "medico",
+        "transcription": "Buenos días, siéntese."
+      },
+      {
+        "start": 8.82,
+        "end": 10.65,
+        "speaker": "medico",
+        "transcription": "¿Qué tal, Sally? ¿Cómo te sientes hoy?"
+      },
+      {
+        "start": 11.0,
+        "end": 14.54,
+        "speaker": "paciente",
+        "transcription": "Estoy un poco con dolor en la garganta, doctor."
+      },
+      {
+        "start": 14.95,
+        "end": 17.87,
+        "speaker": "paciente",
+        "transcription": "La tengo un poco seca, me cuesta tragar..."
+      },
+      {
+        "start": 18.58,
+        "end": 21.72,
+        "speaker": "medico",
+        "transcription": "¿Duermes bien por las noches o te cuesta?"
+      },
+      {
+        "start": 20.65,
+        "end": 23.01,
+        "speaker": "paciente",
+        "transcription": "Me cuesta un poquito respirar."
+      },
+      {
+        "start": 23.45,
+        "end": 26.17,
+        "speaker": "medico",
+        "transcription": "Por lo que veo, creo que es un simple síntoma..."
+      },
+      {
+        "start": 26.63,
+        "end": 28.68,
+        "speaker": "medico",
+        "transcription": "ahora con el frío que suele venir,"
+      },
+      {
+        "start": 28.95,
+        "end": 31.99,
+        "speaker": "medico",
+        "transcription": "lo que pasa que para no quedarnos..."
+      },
+      {
+        "start": 32.26,
+        "end": 34.79,
+        "speaker": "medico",
+        "transcription": "Con la duda te voy a recomendar a mi especialista."
+      },
+      {
+        "start": 35.28,
+        "end": 36.78,
+        "speaker": "medico",
+        "transcription": "Se llama el Doctor Sánchez."
+      },
+      {
+        "start": 37.16,
+        "end": 38.64,
+        "speaker": "medico",
+        "transcription": "Y le preguntamos a ver qué tal."
+      },
+      {
+        "start": 39.1,
+        "end": 40.77,
+        "speaker": "medico",
+        "transcription": "Doctor Sánchez, ¿qué le parece?"
+      },
+      {
+        "start": 41.68,
+        "end": 47.97,
+        "speaker": "especialista",
+        "transcription": "Con esos síntomas parece que podría tratarse de una bronquitis. En esta época del año, que es una época fría,"
+      },
+      {
+        "start": 48.46,
+        "end": 49.96,
+        "speaker": "especialista",
+        "transcription": "especialmente en estas zonas,"
+      },
+      {
+        "start": 50.2,
+        "end": 54.32,
+        "speaker": "especialista",
+        "transcription": "podría tener algún síntoma de fiebre o dificultad para respirar."
+      },
+      {
+        "start": 54.99,
+        "end": 58.0,
+        "speaker": "especialista",
+        "transcription": "¿Qué síntomas está teniendo usted, señorita Sally?"
+      },
+      {
+        "start": 58.99,
+        "end": 66.54,
+        "speaker": "paciente",
+        "transcription": "Un poco de tos, sequedad en la garganta, yo creo que son síntomas comunes que puede haber para este tipo de enfermedad."
+      },
+      {
+        "start": 67.14,
+        "end": 72.8,
+        "speaker": "medico",
+        "transcription": "¿Cuántos días más o menos llevas con estos síntomas? ¿Dos o tres días? ¿Una semana?"
+      },
+      {
+        "start": 72.81,
+        "end": 74.55,
+        "speaker": "paciente",
+        "transcription": "Ya habrá hecho una semana o más."
+      },
+      {
+        "start": 74.82,
+        "end": 77.47,
+        "speaker": "medico",
+        "transcription": "¿Se lo ha recomendado alguien venir, un farmacéutico...?"
+      },
+      {
+        "start": 77.4,
+        "end": 81.03,
+        "speaker": "paciente",
+        "transcription": "No, ya después de tantos días de dolor he preferido venir al médico."
+      },
+      {
+        "start": 81.57,
+        "end": 85.05,
+        "speaker": "medico",
+        "transcription": "Pues has hecho bien, porque siempre que dura mal..."
+      },
+      {
+        "start": 85.11,
+        "end": 87.26,
+        "speaker": "medico",
+        "transcription": "con dos o tres días, bueno, se puede curar"
+      },
+      {
+        "start": 87.7,
+        "end": 89.16,
+        "speaker": "medico",
+        "transcription": "con simple medicación"
+      },
+      {
+        "start": 89.54,
+        "end": 95.68,
+        "speaker": "medico",
+        "transcription": "en la farmacia, pero cuando ya llevas expuesto más tiempo es mejor que acudas al médico y ya comprobamos si es algo más grave."
+      },
+      {
+        "start": 95.95,
+        "end": 97.28,
+        "speaker": "medico",
+        "transcription": "Aunque en principio no lo parece."
+      },
+      {
+        "start": 97.82,
+        "end": 104.98,
+        "speaker": "medico",
+        "transcription": "¿Ha estado expuesto a ambientes fríos o, por ejemplo, trabajar en sitios donde hay mucho polvo, que también puede ser debido a ello?"
+      },
+      {
+        "start": 104.98,
+        "end": 109.77,
+        "speaker": "paciente",
+        "transcription": "Sí, trabajo en el campo, entonces he estado expuesto al frío y a polvo, a la tierra."
+      },
+      {
+        "start": 110.88,
+        "end": 113.04,
+        "speaker": "medico",
+        "transcription": "Ah, pues se lo voy a decir..."
+      },
+      {
+        "start": 113.35,
+        "end": 118.05,
+        "speaker": "medico",
+        "transcription": "al especialista, al Doctor Sánchez, que él entiende más en ese ámbito."
+      },
+      {
+        "start": 118.68,
+        "end": 120.79,
+        "speaker": "medico",
+        "transcription": "A ver qué le parece. ¿Qué te parece...?"
+      },
+      {
+        "start": 120.05,
+        "end": 120.87,
+        "speaker": "especialista",
+        "transcription": "Parece..."
+      },
+      {
+        "start": 121.18,
+        "end": 126.81,
+        "speaker": "medico",
+        "transcription": "Señor Sánchez, ¿a qué puede ser debido? ¿Debido a que trabaja en el campo y está siempre con mucho...?"
+      },
+      {
+        "start": 126.98,
+        "end": 130.14,
+        "speaker": "especialista",
+        "transcription": "como nos ha comentado la señora Sally, al trabajar en el campo,"
+      },
+      {
+        "start": 130.8,
+        "end": 138.44,
+        "speaker": "especialista",
+        "transcription": "eso ha podido agravar sus síntomas. La bronquitis a menudo se desencadena por infecciones virales y la exposición a condiciones como el frío o el polvo."
+      },
+      {
+        "start": 140.38,
+        "end": 142.96,
+        "speaker": "medico",
+        "transcription": "Pues dado lo que nos cuenta,"
+      },
+      {
+        "start": 143.97,
+        "end": 147.67,
+        "speaker": "medico",
+        "transcription": "parece que tenemos aquí una infección respiratoria leve."
+      },
+      {
+        "start": 147.89,
+        "end": 152.48,
+        "speaker": "medico",
+        "transcription": "Pero para estar seguros es mejor seguir con un tratamiento para aliviar los síntomas que tiene."
+      },
+      {
+        "start": 152.75,
+        "end": 155.94,
+        "speaker": "medico",
+        "transcription": "¿Está usted tomando algún medicamento actualmente que pueda...?"
+      },
+      {
+        "start": 157.29,
+        "end": 160.73,
+        "speaker": "medico",
+        "transcription": "interaccionar o le podamos pausar dependiendo de la infección."
+      },
+      {
+        "start": 160.88,
+        "end": 162.32,
+        "speaker": "paciente",
+        "transcription": "No, no tomo ningún medicamento."
+      },
+      {
+        "start": 163.16,
+        "end": 174.05,
+        "speaker": "medico",
+        "transcription": "Vale, pues es comprensible. En su caso, lo mejor sería un tratamiento para calmar la tos, como me has comentado, y el dolor de pecho, para que pueda dormir y descansar, y le recomendaría..."
+      },
+      {
+        "start": 174.27,
+        "end": 184.76,
+        "speaker": "medico",
+        "transcription": "antitusígenos y analgésicos suaves para aliviar la molestia que tiene en el pecho y también un descongestivo para quitar la tos o si puede llegar a generar"
+      },
+      {
+        "start": 185.2,
+        "end": 186.42,
+        "speaker": "medico",
+        "transcription": "mucosidad en la"
+      },
+      {
+        "start": 187.68,
+        "end": 188.29,
+        "speaker": "medico",
+        "transcription": "en la garganta."
+      },
+      {
+        "start": 188.74,
+        "end": 193.5,
+        "speaker": "medico",
+        "transcription": "Además, es importante que repose y se mantenga bien hidratada. Por ejemplo, si te cuesta dormir..."
+      },
+      {
+        "start": 193.84,
+        "end": 196.68,
+        "speaker": "medico",
+        "transcription": "Mejor que te pongas..."
+      },
+      {
+        "start": 198.51,
+        "end": 204.59,
+        "speaker": "medico",
+        "transcription": "una almohada debajo para que siempre estés en posición de 90 grados y así te sea más fácil respirar."
+      },
+      {
+        "start": 205.72,
+        "end": 209.82,
+        "speaker": "medico",
+        "transcription": "Y especialmente también es importante que se mantenga hidratada"
+      },
+      {
+        "start": 210.19,
+        "end": 212.47,
+        "speaker": "medico",
+        "transcription": "para que se eliminen todo tipo de"
+      },
+      {
+        "start": 213.15,
+        "end": 213.5,
+        "speaker": "medico",
+        "transcription": "virus."
+      },
+      {
+        "start": 214.34,
+        "end": 215.37,
+        "speaker": "medico",
+        "transcription": "Especialistas antes"
+      },
+      {
+        "start": 215.66,
+        "end": 217.01,
+        "speaker": "medico",
+        "transcription": "que comentas al respecto."
+      },
+      {
+        "start": 217.97,
+        "end": 220.32,
+        "speaker": "especialista",
+        "transcription": "Estoy bastante de acuerdo con lo que él ha comentado."
+      },
+      {
+        "start": 220.86,
+        "end": 228.52,
+        "speaker": "especialista",
+        "transcription": "El tratamiento para la bronquitis viral suele ser sintomático. Por ello, si no presenta fiebre ni dificultad para respirar, no sería necesario el uso de antibióticos."
+      },
+      {
+        "start": 229.16,
+        "end": 232.32,
+        "speaker": "especialista",
+        "transcription": "Solo hay que tratar los síntomas y esperar a que el cuerpo se recupere solo."
+      },
+      {
+        "start": 234.48,
+        "end": 247.62,
+        "speaker": "medico",
+        "transcription": "Pues ya está, señorita Sally, no se preocupe, parece que su caso es bastante común y leve. Siempre estaremos pendientes de usted. Si vuelve a tener molestias, pásese por aquí."
+      },
+      {
+        "start": 248.33,
+        "end": 256.4,
+        "speaker": "medico",
+        "transcription": "Y generalmente debería empezar a sentirse mejor en unos días con el tratamiento, especialmente si continúa con las recomendaciones pautadas."
+      },
+      {
+        "start": 256.8,
+        "end": 260.55,
+        "speaker": "medico",
+        "transcription": "Si no hay mejora o si nota dificultad para respirar,"
+      },
+      {
+        "start": 260.82,
+        "end": 263.31,
+        "speaker": "medico",
+        "transcription": "o ven que tienen más"
+      },
+      {
+        "start": 263.92,
+        "end": 266.03,
+        "speaker": "medico",
+        "transcription": "síntomas negativos pueden venir"
+      },
+      {
+        "start": 267.94,
+        "end": 271.57,
+        "speaker": "medico",
+        "transcription": "y le atenderemos más profundamente. Pero en principio yo creo que..."
+      },
+      {
+        "start": 271.87,
+        "end": 274.65,
+        "speaker": "medico",
+        "transcription": "con el medicamento que vamos a pautar el tema de..."
+      },
+      {
+        "start": 275.14,
+        "end": 279.48,
+        "speaker": "especialista",
+        "transcription": "Exactamente, la recuperación suele ser rápida, pero si cualquier síntoma cambia, es importante comunicarlo."
+      },
+      {
+        "start": 279.97,
+        "end": 282.0,
+        "speaker": "especialista",
+        "transcription": "Estamos aquí tanto el doctor como yo para ayudarle."
+      },
+      {
+        "start": 282.75,
+        "end": 286.01,
+        "speaker": "medico",
+        "transcription": "Pues nada, perfecto. Entonces, si tiene alguna duda..."
+      },
+      {
+        "start": 286.45,
+        "end": 288.85,
+        "speaker": "medico",
+        "transcription": "contacte con nosotros, le dejamos aquí..."
+      },
+      {
+        "start": 289.27,
+        "end": 295.8,
+        "speaker": "medico",
+        "transcription": "Le voy a sacar ahora la receta médica para que consulte con su farmacéutico,"
+      },
+      {
+        "start": 296.22,
+        "end": 296.71,
+        "speaker": "medico",
+        "transcription": "y listo."
+      },
+      {
+        "start": 297.18,
+        "end": 298.63,
+        "speaker": "paciente",
+        "transcription": "Perfecto, doctor. Muchas gracias."
+      },
+      {
+        "start": 298.8,
+        "end": 301.96,
+        "speaker": "medico",
+        "transcription": "Pues nada, Sally, si tiene alguna duda, aquí estamos."
+      }
+    ]
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "session_id": "475e0f91-b4ca-4b15-83c3-c7f039054f57",
+  "timestamp": "2025-06-04T11:38:20.155929",
+  "speakers": [
+    "especialista",
+    "medico",
+    "paciente"
+  ],
+  "clinical_segments": {
+    "courtesy": {
+      "time_range": "00:00:00 → 00:00:12",
+      "description": "Intercambio de saludos y cortesías entre el paciente y los médicos."
+    },
+    "symptoms": {
+      "time_range": "00:00:12 → 00:00:37",
+      "description": "El paciente describe la aparición repentina de lunares, algunos de aspecto extraño, y consulta si es normal."
+    },
+    "diagnosis": {
+      "time_range": "00:02:10 → 00:03:42",
+      "description": "El médico general considera que el lunar parece común pero pide opinión al especialista. El especialista Sánchez advierte que es importante observar cualquier cambio en los lunares como oscurecimiento o aumento de tamaño."
+    },
+    "treatment": {
+      "time_range": "00:03:42 → 00:04:55",
+      "description": "El especialista indica que el lunar probablemente es benigno (nevus melanocítico), pero recomienda seguimiento continuo debido al crecimiento repentino reportado. El paciente confirma no tener antecedentes familiares de cáncer de piel."
+    },
+    "closure": {
+      "time_range": "00:04:55 → 00:05:00",
+      "description": "Los médicos recomiendan vigilar continuamente los lunares y regresar en caso de cambios adicionales. La conversación concluye cordialmente."
+    }
+  },
+  "medical_concepts": {
+    "especialista": {
+      "PROC": [
+        "observación",
+        "seguimiento",
+        "seguimiento",
+        "observando"
+      ],
+      "LIVB": [
+        "paciente"
+      ],
+      "ANAT": [
+        "lunares",
+        "lunar",
+        "lunar",
+        "lunar",
+        "lunares"
+      ],
+      "DISO": [
+        "enrojecimiento",
+        "picado",
+        "sangrado",
+        "irregulares?",
+        "signos",
+        "nevus melanocítico",
+        "cáncer de piel",
+        "melanoma?",
+        "nevus melanocíticos"
+      ]
+    },
+    "medico": {
+      "PHYS": [
+        "sol"
+      ],
+      "ANAT": [
+        "lunar",
+        "lunar",
+        "lunar",
+        "lunares",
+        "lunar",
+        "lunar?",
+        "lunar",
+        "lunares",
+        "lunar",
+        "lunares?",
+        "lunar",
+        "lunar",
+        "lunar"
+      ],
+      "PROC": [
+        "evaluamos",
+        "diagnóstico",
+        "vigilando",
+        "revisión",
+        "observando"
+      ],
+      "LIVB": [
+        "especialista",
+        "personas",
+        "especialista"
+      ],
+      "DISO": [
+        "lunar",
+        "duele?",
+        "duele",
+        "bordes irregulares"
+      ]
+    },
+    "patient": {
+      "LIVB": [
+        "doctor"
+      ],
+      "DISO": [
+        "lunares",
+        "lunares",
+        "lunares"
+      ],
+      "ANAT": [
+        "espalda",
+        "espalda",
+        "lunares",
+        "lunares"
+      ]
+    }
+  },
+  "extracted_symptoms": [
+    {
+      "predicado": "tiene",
+      "objeto": "lunar",
+      "localizacion": "parte_superior_de_la_espalda"
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "cambio_en_lunar",
+      "duracion": ""
+    },
+    {
+      "predicado": "tiene",
+      "objeto": "crecimiento_repentino"
+    }
+  ],
+  "diagnosis": {
+    "diagnosis": "lesion_sospechosa_melanoma",
+    "recommendation": "Es imprescindible consultar con un dermatólogo lo antes posible para evaluación especializada y posible biopsia."
+  },
+  "transcription": {
+    "segments": [
+      {
+        "start": 1.35,
+        "end": 1.82,
+        "speaker": "medico",
+        "transcription": "Salut !"
+      },
+      {
+        "start": 4.08,
+        "end": 4.81,
+        "speaker": "medico",
+        "transcription": "Buenos días."
+      },
+      {
+        "start": 5.09,
+        "end": 5.87,
+        "speaker": "paciente",
+        "transcription": "Ну, а зиянно так."
+      },
+      {
+        "start": 7.56,
+        "end": 8.6,
+        "speaker": "medico",
+        "transcription": "¿Qué tal está? Siéntese."
+      },
+      {
+        "start": 9.23,
+        "end": 10.93,
+        "speaker": "paciente",
+        "transcription": "Bien, usted es doctor Gutiérrez."
+      },
+      {
+        "start": 10.54,
+        "end": 10.97,
+        "speaker": "medico",
+        "transcription": "Bien."
+      },
+      {
+        "start": 10.97,
+        "end": 11.17,
+        "speaker": "paciente",
+        "transcription": "감사합니다."
+      },
+      {
+        "start": 11.39,
+        "end": 22.32,
+        "speaker": "paciente",
+        "transcription": "¿Qué le podemos ayudar hoy? Doctor, me han salido una serie de lunares, algunos son un poco raros y ha sido muy repentino. Quería saber si hay algún tipo de problema o si es normal."
+      },
+      {
+        "start": 22.73,
+        "end": 29.65,
+        "speaker": "medico",
+        "transcription": "Ahora, con las épocas de más sol, puede ser más común que el lunar se haya expandido."
+      },
+      {
+        "start": 29.85,
+        "end": 34.81,
+        "speaker": "medico",
+        "transcription": "Pero mejor lo evaluamos. Así, entre el especialista y yo, llegaremos a una conclusión."
+      },
+      {
+        "start": 37.12,
+        "end": 40.51,
+        "speaker": "paciente",
+        "transcription": "Va a ver usted que los lunares están en la parte superior de la espalda."
+      },
+      {
+        "start": 42.59,
+        "end": 44.43,
+        "speaker": "medico",
+        "transcription": "Sí, aquí puedo comprobar que tiene el lunar."
+      },
+      {
+        "start": 46.99,
+        "end": 48.36,
+        "speaker": "medico",
+        "transcription": "Aquí tiene un lunar mayor."
+      },
+      {
+        "start": 49.22,
+        "end": 49.69,
+        "speaker": "medico",
+        "transcription": "¿Le duele?"
+      },
+      {
+        "start": 50.25,
+        "end": 51.55,
+        "speaker": "paciente",
+        "transcription": "No, no, no, no, no."
+      },
+      {
+        "start": 52.29,
+        "end": 52.75,
+        "speaker": "medico",
+        "transcription": "Vale."
+      },
+      {
+        "start": 55.21,
+        "end": 56.36,
+        "speaker": "medico",
+        "transcription": "Sí,"
+      },
+      {
+        "start": 58.15,
+        "end": 60.88,
+        "speaker": "medico",
+        "transcription": "Se ve que es un lunar común."
+      },
+      {
+        "start": 61.24,
+        "end": 66.84,
+        "speaker": "medico",
+        "transcription": "En personas, y más ahora con esta abundancia de lunares. ¿Ha visto si ha crecido?"
+      },
+      {
+        "start": 67.67,
+        "end": 70.75,
+        "speaker": "medico",
+        "transcription": "De un día para otro, o"
+      },
+      {
+        "start": 71.41,
+        "end": 73.07,
+        "speaker": "medico",
+        "transcription": "o le han nacido así directamente."
+      },
+      {
+        "start": 73.25,
+        "end": 81.64,
+        "speaker": "paciente",
+        "transcription": "No le puedo decir, doctor, porque de repente me vi la espalda y tenía los lunares así, cuando antes no estaban. Entonces diría que ha sido un crecimiento repentino."
+      },
+      {
+        "start": 81.76,
+        "end": 83.56,
+        "speaker": "medico",
+        "transcription": "Tal y como me ha dicho que no le duele,"
+      },
+      {
+        "start": 83.65,
+        "end": 85.74,
+        "speaker": "medico",
+        "transcription": "no sé si pueden ser los primeros días del"
+      },
+      {
+        "start": 86.5,
+        "end": 88.07,
+        "speaker": "medico",
+        "transcription": "del lunar, o"
+      },
+      {
+        "start": 88.59,
+        "end": 96.59,
+        "speaker": "medico",
+        "transcription": "o que no va a más, que no es muy grave. De todas formas, se lo enseñaré a mi especialista Sánchez, que él le va a dar un diagnóstico más concreto."
+      },
+      {
+        "start": 97.16,
+        "end": 100.44,
+        "speaker": "medico",
+        "transcription": "Sánchez, ¿qué opina al respecto?"
+      },
+      {
+        "start": 100.74,
+        "end": 109.36,
+        "speaker": "especialista",
+        "transcription": "Con la observación que ha realizado al paciente, no puedo decirle con exactitud lo que tiene, pero es importante prestar atención a cualquier cambio en los lunares."
+      },
+      {
+        "start": 109.74,
+        "end": 116.86,
+        "speaker": "especialista",
+        "transcription": "Como el enrojecimiento o el aumento de tamaño. Señor, ¿ha notado alguna vez que el lunar le haya picado, sangrado o tenido bordes irregulares?"
+      },
+      {
+        "start": 117.33,
+        "end": 118.97,
+        "speaker": "especialista",
+        "transcription": "No, no especialmente."
+      },
+      {
+        "start": 120.18,
+        "end": 123.83,
+        "speaker": "medico",
+        "transcription": "¿Cuánto tiempo lleva notando este cambio en el lunar? ¿Ha sido repentino?"
+      },
+      {
+        "start": 123.83,
+        "end": 125.13,
+        "speaker": "paciente",
+        "transcription": "Como me ha dicho,"
+      },
+      {
+        "start": 125.61,
+        "end": 127.03,
+        "speaker": "medico",
+        "transcription": "o puede ser que sea de"
+      },
+      {
+        "start": 127.39,
+        "end": 128.97,
+        "speaker": "medico",
+        "transcription": "un cambio muy rápido."
+      },
+      {
+        "start": 129.31,
+        "end": 131.55,
+        "speaker": "paciente",
+        "transcription": "El crecimiento de los lunares ha sido repentino."
+      },
+      {
+        "start": 132.87,
+        "end": 133.68,
+        "speaker": "medico",
+        "transcription": "Este"
+      },
+      {
+        "start": 134.25,
+        "end": 137.48,
+        "speaker": "medico",
+        "transcription": "lunar ha cambiado de tamaño o tiene bordes irregulares."
+      },
+      {
+        "start": 139.67,
+        "end": 142.0,
+        "speaker": "paciente",
+        "transcription": "No, parecen lunares normales."
+      },
+      {
+        "start": 143.25,
+        "end": 145.93,
+        "speaker": "medico",
+        "transcription": "Vale, especialista Sánchez, ¿qué opina al respecto?"
+      },
+      {
+        "start": 146.67,
+        "end": 157.07,
+        "speaker": "especialista",
+        "transcription": "Estos son signos que siempre debemos tener en cuenta. El nevus melanocítico es común y generalmente benigno, pero los cambios que describe podrían indicar que necesita un seguimiento más continuo."
+      },
+      {
+        "start": 157.74,
+        "end": 161.64,
+        "speaker": "especialista",
+        "transcription": "Señor, ¿tiene antecedentes familiares de cáncer de piel o melanoma?"
+      },
+      {
+        "start": 162.55,
+        "end": 165.05,
+        "speaker": "paciente",
+        "transcription": "No, no tengo ningún antecedente."
+      },
+      {
+        "start": 166.0,
+        "end": 168.51,
+        "speaker": "medico",
+        "transcription": "Es bueno no tener antecedentes familiares."
+      },
+      {
+        "start": 170.79,
+        "end": 178.72,
+        "speaker": "medico",
+        "transcription": "Sin embargo, es importante vigilar cualquier cambio en los lunares, especialmente si experimenta un crecimiento o cambios en el color."
+      },
+      {
+        "start": 179.53,
+        "end": 195.34,
+        "speaker": "especialista",
+        "transcription": "Así es, aunque la mayoría de los nevus melanocíticos comunes son benignos, el hecho de que haya notado algunos cambios en un lunar hace necesario que le hagamos un seguimiento y estemos atentos. Como mencionó mi compañero el doctor Lorente, lo mejor sería seguir observando este lunar."
+      },
+      {
+        "start": 195.6,
+        "end": 199.11,
+        "speaker": "especialista",
+        "transcription": "para ver la evolución continua de alguna forma."
+      },
+      {
+        "start": 200.44,
+        "end": 208.34,
+        "speaker": "medico",
+        "transcription": "También es importante que permanezca pendiente de cualquier otro lunar que pueda cambiar en el futuro. ¿Ha notado algo extraño en otros lunares?"
+      },
+      {
+        "start": 208.66,
+        "end": 210.16,
+        "speaker": "paciente",
+        "transcription": "No, no, no."
+      },
+      {
+        "start": 210.48,
+        "end": 211.1,
+        "speaker": "medico",
+        "transcription": "Bye. Bye."
+      },
+      {
+        "start": 211.69,
+        "end": 219.59,
+        "speaker": "medico",
+        "transcription": "Perfecto, lo que le recomiendo es seguir vigilando el lunar y si nota algún otro cambio en el futuro,"
+      },
+      {
+        "start": 219.78,
+        "end": 224.13,
+        "speaker": "medico",
+        "transcription": "o si este lunar sigue cambiando, por favor, regrese para una revisión más detallada."
+      },
+      {
+        "start": 224.42,
+        "end": 233.09,
+        "speaker": "especialista",
+        "transcription": "Exacto, lo importante es que estemos alerta a cualquier cambio y aunque la mayoría de los lunares no presentan un problema serio."
+      },
+      {
+        "start": 233.23,
+        "end": 235.22,
+        "speaker": "especialista",
+        "transcription": "Siempre es mejor tenerlos vigilados."
+      },
+      {
+        "start": 235.77,
+        "end": 239.72,
+        "speaker": "medico",
+        "transcription": "En su caso, no parece haber motivo de preocupación inmediata."
+      },
+      {
+        "start": 240.04,
+        "end": 241.68,
+        "speaker": "medico",
+        "transcription": "pero continúe observando el lunar."
+      },
+      {
+        "start": 241.97,
+        "end": 245.56,
+        "speaker": "medico",
+        "transcription": "Y si tiene alguna duda, no dude en contactarnos, que ya sabe dónde estamos."
+      },
+      {
+        "start": 245.98,
+        "end": 247.4,
+        "speaker": "paciente",
+        "transcription": "Perfecto doctor, muchas gracias."
+      }
+    ]
+  }
+}
